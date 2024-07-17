@@ -10,14 +10,14 @@ Kubernetes full edge wordpress configuration using pvc, pv, secrets, configmap a
 *Set Credentials according to your need.*
 >
 >apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: mysql-config
-data:
-  DATABASE: "db1"
-  USER: "vishal"
-  PASSWORD: "12345678"
-  ROOT_PASSWORD: "12345678"
+>kind: ConfigMap
+>metadata:
+>  name: mysql-config
+>data:
+>  DATABASE: "db1"
+>  USER: "vishal"
+>  PASSWORD: "12345678"
+>  ROOT_PASSWORD: "12345678"
   
   **Apply**
 >kubectl apply -f configmap.yaml
@@ -27,16 +27,16 @@ data:
 **Code**
 
 >apiVersion: v1
-kind: Secret
-metadata:
-  name: wp-secret
-type: Opaque
-data:
-  HOST: "bXlzcWw6MzMwNg=="
-  DATABASE: "ZGIx"
-  USER: "dmlzaGFs"
-  PASSWORD: "MTIzNDU2Nzg="
-  ROOT_PASSWORD: "MTIzNDU2Nzg="
+>kind: Secret
+>metadata:
+>  name: wp-secret
+>type: Opaque
+>data:
+>  HOST: "bXlzcWw6MzMwNg=="
+>  DATABASE: "ZGIx"
+>  USER: "dmlzaGFs"
+>  PASSWORD: "MTIzNDU2Nzg="
+>  ROOT_PASSWORD: "MTIzNDU2Nzg="
 
 **Apply**
 >kubectl apply -f secret.yaml
