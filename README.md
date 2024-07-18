@@ -2,9 +2,10 @@
 # Wordpress_in_Kubernetes
 Kubernetes full edge wordpress configuration using pvc, pv, secrets, configmap and load balancer.
 
+## Setup
 
 **Clone the repository**
->git clone < URL >
+>git clone < Repository_URL >
 
 ## 1. Prerequisite
 - ### Minukube
@@ -74,3 +75,7 @@ For Preserving application data, pvc is sued with wordpress. This volume can be 
 **example**
 >192.168.52.8:31370
 
+
+# Conclusion
+
+Deploying WordPress in a Kubernetes environment with PVCs, ConfigMaps, and Secrets provides a robust and flexible solution for hosting a WordPress site. This setup leverages Kubernetes' capabilities to enhance scalability, security, and management, ensuring a smooth and efficient deployment process.
